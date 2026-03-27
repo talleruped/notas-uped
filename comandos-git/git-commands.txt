@@ -1,0 +1,42 @@
+crear proyecto
+//inicios
+git config --global user.name "tu nombre"
+git config --global user.email "tu@gmail.com"
+
+ls -l  //ver archivos y carpetas con permisos
+ls -a  //ver archivos incluidos los ocultos
+ls -l -a //los dos anteriores combinados
+
+git init	//iniciar repositorio con git
+
+git add .	//añadir los archivos creados al stagin
+git add *
+
+git commit -m "" //guardar los cambios en el proyecto(version)
+
+//creamos un repositorio en git hub(sin readme, sin licencia, sin gitIngnore)
+//con el mismo nombre del proyecto
+//copiar URL del repositorio creado
+
+git branch
+
+
+cat file.txt //ve lo que ahi dentro de file.txt
+cat> otro.txt //crea un archivo llamado otro (si existe lo reemplaza)
+ //y escribes dentro, luego precionas ennter para guardar la info
+nano file.txt  //editor pro de archivos
+
+touch file{1..3}.html	//crrea file1.html, file2.html, file3.html
+touch uno.txt dos.txt  //crea varios archivos
+
+mkdir proyecto && touch proyecto/index.html proyecto/style.css
+
+//crea una carpeta y(&&) luego un varios archivos dentro
+
+mv file*.html prueba_html  //mueve archivos que inicien con file y tengan extencion html
+
+ls prueba_html   //verifico que esten ahi, sin moverme de directorio
+
+--------------------------
+//copiar varios archivos a dos carpetas a la vez
+cp prueba_html/file*.html respaldo/ && cp prueba_html/file*.html reportes/

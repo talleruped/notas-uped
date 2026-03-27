@@ -1,0 +1,41 @@
+creado el repositorio (working directory)
+y subido al repositorio
+git add *
+git commit -m ""
+
+git remote 
+git push -u origin main
+
+-------------------------------
+crear ramas
+git branch nueva_rama	//crear rama
+
+git checkout nueva_rama //cambia a rama nueva
+git switch main		//cambia a rama main
+
+git checkout -b rama_2	//crea rama y se cambia a esa
+git switch -c nueva_rama main //crea rama a partir de main y se cambia a ella
+
+git push -u origin nueva_rama  //sube la rama al repositorio
+-----------------------------
+alguien trabaja en la main directamente y hace
+git add *	git commit - m ""
+git push -u origin main
+
+----------------------------
+editan rama nueva_rama	hacen cambios y luego fusionan con main
+mkdir servidores && touch servidores/etc.txt
+nano servidores/etc.txt
+cat >>servidores/etc.txt
+nuevas lineas agregadas con cat>>etc.txt
+vamos a guardar con enter
+y Ctrl+D
+
+git add .
+git commit -m "se agrego la carpeta de servidores"
+git push origin servidores
+
+
+git switch main
+git merge nueva_rama
+esc :wq
